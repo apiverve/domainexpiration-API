@@ -11,7 +11,7 @@
     "url": "git+https://github.com/apiverve/domainexpiration-API.git"
   },
   "keywords": [
-    "domain expiration checker"," domain expiration checker api"," domain expiration checker tool"," domain expiration checker software"," domain expiration checker service"," domain expiration checker library"," domain expiration checker sdk"," domain expiration checker code"," domain expiration checker script"," domain expiration checker program"," domain expiration checker application"," domain expiration checker app"," domain expiration checker utility"," domain expiration checker helper"," domain expiration checker helper tool"," domain expiration checker helper software"," domain expiration checker helper service"," domain expiration checker helper library"," domain expiration checker helper sdk"," domain expiration checker helper code"," domain expiration checker helper script"," domain expiration checker helper program"," domain expiration checker helper application"," domain expiration checker helper app"," domain expiration checker helper utility"," domain expiration checker helper"
+    "domain expiration checker","domain expiration checker api","domain expiration checker tool","domain expiration checker software","domain expiration checker service"
   ],
   "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
   "license": "MIT",
@@ -27,6 +27,6 @@
   "dependencies": {
     "node-fetch": "3.3.2",
     "promise": "^7.1.1",
-    "request": "^2.69.0"
+    "axios": "^0.15.3"
   }
 }
