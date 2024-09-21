@@ -73,11 +73,11 @@ api.execute(query, function (error, data) {
   "data": {
     "domain": "myspace.com",
     "expirationDate": "2029-02-23T05:00:00Z",
-    "daysToExpiration": 1653,
+    "daysToExpiration": 1635,
     "createdDate": "1996-02-22T05:00:00Z",
     "lastUpdatedDate": "2023-01-17T00:16:21Z",
-    "daysSinceLastUpdate": 575,
-    "domainAgeDays": 10401
+    "daysSinceLastUpdate": 593,
+    "domainAgeDays": 10419
   },
   "code": 200
 }
