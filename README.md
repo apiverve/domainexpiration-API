@@ -73,11 +73,11 @@ api.execute(query, function (error, data) {
   "data": {
     "domain": "myspace.com",
     "expirationDate": "2029-02-23T05:00:00Z",
-    "daysToExpiration": 1635,
+    "daysToExpiration": 1463,
     "createdDate": "1996-02-22T05:00:00Z",
     "lastUpdatedDate": "2023-01-17T00:16:21Z",
-    "daysSinceLastUpdate": 593,
-    "domainAgeDays": 10419
+    "daysSinceLastUpdate": 765,
+    "domainAgeDays": 10591
   },
   "code": 200
 }
@@ -105,7 +105,7 @@ All usage of the APIVerve website, API, and services is subject to the [APIVerve
 ## License
 Licensed under the The MIT License (MIT)
 
-Copyright (&copy;) 2024 APIVerve, and Evlar LLC
+Copyright (&copy;) 2025 APIVerve, and EvlarSoft LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
