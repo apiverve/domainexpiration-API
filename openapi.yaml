@@ -1,0 +1,71 @@
+openapi: 3.0.4
+info:
+  title: Domain Expiration
+  description: Domain Expiration Checker is a simple tool for checking the expiration date and age of a domain. It returns the expiration date and age of the domain provided.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/domainexpiration:
+    get:
+      summary: Check Domain Expiration
+      description: Domain Expiration Checker is a simple tool for checking the expiration date and age of a domain. It returns the expiration date and age of the domain provided.
+      operationId: domainexpiration
+      parameters:
+      - name: domain
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The domain to check the expiration date of
+        example: myspace.com
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  domain: myspace.com
+                  expirationDate: 2029-02-23T05:00:00.0000000Z
+                  daysToExpiration: 1463
+                  createdDate: 1996-02-22T05:00:00.0000000Z
+                  lastUpdatedDate: 2023-01-17T00:16:21.0000000Z
+                  daysSinceLastUpdate: 765
+                  domainAgeDays: 10591
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
